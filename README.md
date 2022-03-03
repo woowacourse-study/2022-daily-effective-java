@@ -56,6 +56,9 @@
 <details>
 <summary>5장 제네릭</summary>
 <div markdown="1">       
+  
+  - [로 타입은 사용하지 말라](./handbook/05/26.%20로%20타입은%20사용하지%20말라.md)  
+  - [비검사 경고를 제거하라](./handbook/05/27.%20비검사%20경고를%20제거하라.md)  
 
 </div>
 </details>
