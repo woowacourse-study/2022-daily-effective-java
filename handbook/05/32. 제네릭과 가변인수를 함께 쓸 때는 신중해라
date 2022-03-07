@@ -1,0 +1,84 @@
+### 제네릭과 가변인수를 함께 쓸 때는 신중해라
+
+ `판다`
+
+- **어떤 상황을 의미하는가?**
+    
+    ```java
+    // toArray 함수 구현 (제네릭 X)
+    
+    static int[] toArray(int... args){
+    	return args;
+    }
+    ```
+    
+    ```java
+    // toArray 함수 구현 (제네릭 O)
+    
+    static <T> T[] toArray(T... args){ // 제네릭 매개변수 배열의 참조를 외부에 노출
+    	return args;
+    }
+    ```
+    
+- **위험성**
+    - 불가능한 타입 변환 실행으로 인해 heap 오염이 발생할 위험이 항상 존재
+    
+    ```java
+    // 위험한 사용 예시
+    
+    static <T> T exampleCode(List<T>... args) { // int -> T 로의 형변환이 불가능한 type T가 들어온다면...
+            int temp = 77;
+            Object[] o = args;
+            o[0] = temp;
+            T t = args[0].get(0); // Runtime에 ClassCastException 발생!!
+            return t;
+        }
+    ```
+    
+    - 그럼에도 불구하고, 제네릭 가변인수를 파라미터로 받는 메소드에 오류 대신 경고만 뜨는 이유  ⇒ 실무에서 유용하기 때문. ex) Arrays.asList, Collections.toList, ...
+    - 기존에는 type-safe한 제네릭 가변변수 메소드에 `@SurpressedWarnings("unchecked")` annotation을 일일히 달아서, API를 사용하는 쪽에서 경고를 숨기는 작업을 수행.
+    
+- **해결 방안**
+    - (1) 자바 7 이후에는 `@SafeVarargs` annotation을 통해 API 작성자가 해당 메소드가 형변환에 대해 안전함을 보장할 수 있도록 하였다.
+    
+    ```java
+    // Arrays.asList 라이브러리의 구조
+    
+    @SafeVarargs 
+    @NotNull 
+    @Contract(pure = true) 
+    public static <T> java.util.List<T> asList(@NotNull T... a){
+    	...
+    }
+    ```
+    
+    - `@SafeVarargs` annotation을 달기 위해서는,
+        
+        1) 가변인수 파라미터로 받은 배열에 아무것도 저장하지 않는다. 
+        
+        2) 제네릭 가변인수 배열을 외부에 노출하지 않는다. (단, `@SafeVarargs` annotation이 달린 다른 메소드에는 괜찮다.)
+        
+    
+    - (2) 제네릭 가변인수를 파라미터로 받는 메소드를 사용하지 않는 방법.
+        
+        → 제네릭 가변인수 형태를 제네릭의 List 형태로 바꿔서 사용. 
+        
+        ```java
+        static <T> T exampleCode(List<T> args) { 
+                int temp = 77;
+                Object o = args;
+                o = temp;
+                T t = args.get(0); 
+                return t;
+            }
+        
+        public static void main(String[] args){
+        	int test = exampleCode(List.of(11,22,33)); // List.of 자체가 @SafeVarargs가 달린 메소드이므로 사용 가능
+        }
+        ```
+        
+
+- **정리**
+    - 제네릭과 가변변수는 가급적이면 메소드의 파라미터에 함께 사용하지 말 것.
+    - 사용해야만 한다면, 타입 변환에 대해 안전함을 검토한 후, `@Safevarargs` annotation을 붙여 사용할 것.
+    - 기능적으로 유용하므로, 위험을 감수하고 사용하는 경우가 있음.
