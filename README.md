@@ -65,7 +65,9 @@
 
 <details>
 <summary>6장 열거 타입과 애너테이션</summary>
-<div markdown="1">       
+<div markdown="1">
+  
+  - [35. ordinal 메서드 대신 인스턴스 필드를 사용하라](./handbook/06/35.%20ordinal%20메서드%20대신%20인스턴스%20필드를%20사용하라.md)
 
 </div>
 </details>
