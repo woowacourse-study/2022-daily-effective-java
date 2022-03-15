@@ -1,9 +1,9 @@
-# 🍜 데일리 이펙티브 자바 스터디
+# 🍜 데일리 이펙티브 자바 스터디  
 
 등교하는 매일 17:50~  
-[이펙티브 자바](http://aladin.kr/p/1bCBy)의 아이템을 세 개씩 공부하는 모임
+[이펙티브 자바](http://aladin.kr/p/1bCBy)의 아이템을 세 개씩 공부하는 모임   
 
-## Handbook
+## Handbook  
 
 <details>
 <summary>2장 객체 생성과 파괴</summary>
@@ -24,14 +24,14 @@
 
 <details>
 <summary>3장 모든 객체의 공통 메서드</summary>
-<div markdown="1">
+<div markdown="1">       
 
-- [equals 만들 때 일반규약을 지켜라 귀찮으면 IDE가 만들어주는거 써라](./handbook/03/10.equals%20만들%20때%20일반규약을%20지켜라%20귀찮으면%20IDE가%20만들어주는거%20써라.md)
-- [equals 를 재정의 하려거든 hashCode 도 재정의하라](./handbook/03/11.equals%20를%20재정의%20하려거든%20hashCode%20도%20재정의하라.md)
-- [유용한 정보를 가지도록 toString을 재정의하자](./handbook/03/12.유용한%20정보를%20가지도록%20toString을%20재정의하자.md)
-- [clone 재정의는 주의해서 진행](./handbook/03/13.clone%20재정의는%20주의해서%20진행.md)
-- [Comparable을 구현할지 고려하라](./handbook/03/14.Comparable을%20구현할지%20고려하라.md)
-
+  - [equals 만들 때 일반규약을 지켜라 귀찮으면 IDE가 만들어주는거 써라](./handbook/03/10.equals%20만들%20때%20일반규약을%20지켜라%20귀찮으면%20IDE가%20만들어주는거%20써라.md)  
+  - [equals 를 재정의 하려거든 hashCode 도 재정의하라](./handbook/03/11.equals%20를%20재정의%20하려거든%20hashCode%20도%20재정의하라.md)  
+  - [유용한 정보를 가지도록 toString을 재정의하자](./handbook/03/12.유용한%20정보를%20가지도록%20toString을%20재정의하자.md)  
+  - [clone 재정의는 주의해서 진행](./handbook/03/13.clone%20재정의는%20주의해서%20진행.md)  
+  - [Comparable을 구현할지 고려하라](./handbook/03/14.Comparable을%20구현할지%20고려하라.md)  
+  
 </div>
 </details>
 
@@ -83,58 +83,61 @@
 
 <details>
 <summary>7장 람다와 스트림</summary>
-<div markdown="1">
+<div markdown="1">       
 
-- [45. 스트림은 주의해서 사용하라](./handbook/07/45.%20%EC%8A%A4%ED%8A%B8%EB%A6%BC%EC%9D%80%20%EC%A3%BC%EC%9D%98%ED%95%B4%EC%84%9C%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md)
+- [45. 스트림은 주의해서 사용하라](./handbook/07/45.%20%EC%8A%A4%ED%8A%B8%EB%A6%BC%EC%9D%80%20%EC%A3%BC%EC%9D%98%ED%95%B4%EC%84%9C%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md) 
 
 </div>
 </details>
 
 <details>
 <summary>8장 메서드</summary>
-<div markdown="1">
+<div markdown="1">       
 
 </div>
 </details>
 
 <details>
 <summary>9장 일반적인 프로그래밍 원칙</summary>
-<div markdown="1">
+<div markdown="1">       
 
 </div>
 </details>
 
 <details>
 <summary>10장 예외</summary>
-<div markdown="1">
+<div markdown="1">       
 
 </div>
 </details>
 
 <details>
 <summary>11장 동시성</summary>
-<div markdown="1">
+<div markdown="1">       
 
 </div>
 </details>
 
 <details>
 <summary>12장 직렬화</summary>
-<div markdown="1">
+<div markdown="1">       
 
 </div>
 </details>
 
-## Members
+## Members  
 
-| [![](https://github.com/hyewoncc.png?size=80)](https://github.com/hyewoncc) | [![](https://github.com/jaejae-yoo.png?size=80)](https://github.com/jaejae-yoo) | [![](https://github.com/BETTERFUTURE4.png?size=80)](https://github.com/BETTERFUTURE4) | [![](https://github.com/kbsat.png?size=80)](https://github.com/kbsat) | [![](https://github.com/nbalance97.png?size=80)](https://github.com/nbalance97) |
-| :-------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: | :-------------------------------------------------------------------: | :-----------------------------------------------------------------------------: |
-|                                    써머                                     |                                     그린론                                      |                                         헌치                                          |                                 로마                                  |                                      라쿤                                       |
+|[![](https://github.com/hyewoncc.png?size=80)](https://github.com/hyewoncc)|[![](https://github.com/jaejae-yoo.png?size=80)](https://github.com/jaejae-yoo) |[![](https://github.com/BETTERFUTURE4.png?size=80)](https://github.com/BETTERFUTURE4) | [![](https://github.com/kbsat.png?size=80)](https://github.com/kbsat) | [![](https://github.com/nbalance97.png?size=80)](https://github.com/nbalance97) |  
+|:---:|:---:|:---:|:---:|:---:|
+| 써머 | 그린론 | 헌치 | 로마 | 라쿤 |  
 
-| [![](https://github.com/sojukang.png?size=80)](https://github.com/sojukang) | [<img src="https://github.com/woong7.png" width="80">](https://github.com/woong7) | [![](https://github.com/SuyeonChoi.png?size=80)](https://github.com/SuyeonChoi) | [![](https://github.com/jojogreen91.png?size=80)](https://github.com/jojogreen91) | [![](https://github.com/Byeongju-Kong.png?size=80)](https://github.com/Byeongju-Kong) |
-| :-------------------------------------------------------------------------: | :-------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: | :-------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
-|                                   소주캉                                    |                                       판다                                        |                                      페퍼                                       |                                     조조그린                                      |                                        크리스                                         |
 
-| [![](https://github.com/RunaNam.png?size=80)](https://github.com/RunaNam) | [![](https://github.com/devHudi.png?size=80)](https://github.com/devHudi) | [![](https://github.com/RIANAEH.png?size=80)](https://github.com/RIANAEH) | [<img src="https://github.com/sc0116.png" width="80">](https://github.com/sc0116) | [![](https://github.com/awesomeo184.png?size=80)](https://github.com/awesomeo184) |
-| :-----------------------------------------------------------------------: | :-----------------------------------------------------------------------: | :-----------------------------------------------------------------------: | :-------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------: |
-|                                   루나                                    |                                   후디                                    |                                   엘리                                    |                                       짱구                                        |                                      어썸오                                       |
+|[![](https://github.com/sojukang.png?size=80)](https://github.com/sojukang)|[<img src="https://github.com/woong7.png" width="80">](https://github.com/woong7) |[![](https://github.com/SuyeonChoi.png?size=80)](https://github.com/SuyeonChoi) | [![](https://github.com/jojogreen91.png?size=80)](https://github.com/jojogreen91) | [![](https://github.com/Byeongju-Kong.png?size=80)](https://github.com/Byeongju-Kong) |  
+|:---:|:---:|:---:|:---:|:---:|  
+| 소주캉 | 판다 | 페퍼 | 조조그린 | 크리스 |  
+
+
+|[![](https://github.com/RunaNam.png?size=80)](https://github.com/RunaNam)|[![](https://github.com/devHudi.png?size=80)](https://github.com/devHudi) |[![](https://github.com/RIANAEH.png?size=80)](https://github.com/RIANAEH) | [<img src="https://github.com/sc0116.png" width="80">](https://github.com/sc0116) | [![](https://github.com/awesomeo184.png?size=80)](https://github.com/awesomeo184) |  
+|:---:|:---:|:---:|:---:|:---:|  
+| 루나 | 후디 | 엘리 | 짱구 | 어썸오 |  
+
