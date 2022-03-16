@@ -86,6 +86,7 @@
 <div markdown="1">       
 
 - [45. 스트림은 주의해서 사용하라](./handbook/07/45.%20%EC%8A%A4%ED%8A%B8%EB%A6%BC%EC%9D%80%20%EC%A3%BC%EC%9D%98%ED%95%B4%EC%84%9C%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md) 
+- [46. 스트림에서는 부작용 없는 함수를 사용하라](./handbook/07/46.%20스트림에서는%20부작용%20없는%20함수를%20사용하라.md) 
 
 </div>
 </details>
