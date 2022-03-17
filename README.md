@@ -95,6 +95,8 @@
 <summary>8장 메서드</summary>
 <div markdown="1">       
 
+- [50. 적시에 방어적 복사본을 만들라](./handbook/08/50.%20적시에%20방어적%20복사본을%20만들라.md)
+  
 </div>
 </details>
 
